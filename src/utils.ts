@@ -1,14 +1,10 @@
 
-
  export interface IAllData {
   body:string
   id:number
   title:string
   userId:number
 }
-
-
-
 
 export async function fetchPosts(pageNum = 1):Promise<IAllData[]> {
   const response = await fetch(
